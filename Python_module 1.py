@@ -1,4 +1,4 @@
-
+"""
 #Use a stride value of 2 to print out every second character of the string E:
 
 E = 'clocrkr1e1c1t'
@@ -208,3 +208,74 @@ album_sales_dict = {"JLO":50000 ,"Taylor Swift":650000, "Katy Perry":40000 }
 print(album_sales_dict)
 print(album_sales_dict.keys())
 print(album_sales_dict.values())
+
+
+
+
+#############################################################
+
+
+
+# Convert list to set
+
+list1 = ["pop", "rock", "soul", "hard rock", "rock", "R&B", "rock", "disco"]
+print(set(list1))
+
+
+
+
+#############################################################
+
+
+
+# Add and remove element to set
+
+A = set(["Thriller", "Back in Black", "AC/DC"])
+A.add("Freedom")
+A.remove("Thriller")
+print(A)
+
+
+
+
+#############################################################
+
+
+
+# Verify if the element is in the set
+
+A = {"Thriller", "Back in Black", "AC/DC","Freedom"}
+print("AC/DC" in A)
+
+
+
+
+#############################################################
+
+
+#Find the intersections, difference, union of two sets
+
+album_set1 = {"Thriller", 'AC/DC', 'Back in Black'}
+album_set2 = { "AC/DC", "Back in Black", "The Dark Side of the Moon"}
+print("Intersection of both the sets is ", album_set1 & album_set2 )
+print("Intersection of both the sets using intersect function is ", album_set1.intersection(album_set2))
+print("Difference in the set1 as compared to set2 is ", album_set1.difference(album_set2))
+print("Union of both the sets is ", album_set1.union(album_set2))
+
+album_set3 = album_set1 & album_set2
+print("whether set3 is subset of set1: ", album_set3.issubset(album_set1))
+print("whether set1 is superset of set3: ", album_set1.issuperset(album_set3))
+
+
+
+
+#############################################################
+
+"""
+
+#does sum(List A) = sum(set B)
+
+A = [1, 2, 2, 1]
+B = set([1, 2, 2, 1])
+print("sum of list A is ", sum(A))
+print("sum of list B is ", sum(B))
