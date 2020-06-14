@@ -144,3 +144,67 @@ print(sorted(C_tuple))
 #############################################################
 
 
+
+# create a dictionary
+
+Dict = {"Disha":1991 , "Saish":1988, "Aakanksha":1990, "China":1992}
+print(Dict)
+
+
+#############################################################
+
+
+
+# Access to the value by the key
+Dict = {"Disha":1991 , "Saish":1988, "Aakanksha":1990, "China":1992}
+print(Dict["Saish"])
+print(Dict[(0,1)])
+
+
+
+#############################################################
+
+
+
+
+# Get all the keys in dictionary
+Dict = {"Disha":1991 , "Saish":1988, "Aakanksha":1990, "China":1992}
+print(Dict.keys())
+
+
+
+#############################################################
+
+
+
+
+# Get all the values in dictionary
+Dict = {"Disha":1991 , "Saish":1988, "Aakanksha":1990, "China":1992}
+print(Dict.values())
+
+
+
+#############################################################
+
+
+
+# Append value with key into dictionary
+
+Dict = {"Disha":1991 , "Saish":1988, "Aakanksha":1990, "China":1992}
+Dict["Praful"] = 1989
+print(Dict)
+
+
+
+
+#############################################################
+
+
+
+
+# Create a dictionary album_sales_dict where the keys are the album name and the sales in millions are the values
+
+album_sales_dict = {"JLO":50000 ,"Taylor Swift":650000, "Katy Perry":40000 }
+print(album_sales_dict)
+print(album_sales_dict.keys())
+print(album_sales_dict.values())
