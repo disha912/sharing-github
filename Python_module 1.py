@@ -571,17 +571,70 @@ with open(file1,'r') as file2:
 
 #############################################################
 
-"""
+
 #read a file line by line
 
 file1 = 'C:\\Disha\\Python\\file.txt'
-count=0
 with (open(file1,'r')) as file2:
     for i in file2:
         filestr=str(i)
         print(filestr[8:16])
+    
+                
 
 
 
+#############################################################
+
+
+# Write line to file
+
+file = 'C:\\Disha\\Python\\file_write.txt'
+with open( file, 'w') as file_write:
+    file_write.write('This is Line A')
+    
+                
+
+
+
+#############################################################
+
+
+# Write line to file one by one and read them as well
+
+Lines=['This is Line b\n', 'This is Line c\n' , 'This is Line d\n']
+file = 'C:\\Disha\\Python\\file_write.txt'
+with open(file, 'w')  as file_write:
+    for i in Lines:
+        file_write.write(i)
+
+with open(file, 'r')  as file_write:
+    print(file_write.read())
 
     
+                
+
+
+
+#############################################################
+
+"""
+# Copy file to another
+with open('C:\\Disha\\Python\\copy_from.txt','r') as file_read:
+    with open('C:\\Disha\\Python\\copy_to.txt','w') as file_write:
+        for i in file_read:
+            print(i)
+            file_write.write(i)
+
+with open('C:\\Disha\\Python\\copy_to.txt','r') as file_write:
+    file_write.read()
+
+
+
+
+
+
+
+
+
+
