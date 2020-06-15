@@ -1,3 +1,4 @@
+"""
 
 #Use a stride value of 2 to print out every second character of the string E:
 
@@ -352,7 +353,7 @@ else:
     print("this album is ok")
                 
 
-
+"""
 
 #############################################################
 
@@ -362,3 +363,4 @@ else:
 album_year=1979
 if album_year < 1980 or album_year == 1991 or album_year == 1993:
     print("Album came out in", album_year )
+
