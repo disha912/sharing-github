@@ -271,7 +271,7 @@ print("whether set1 is superset of set3: ", album_set1.issuperset(album_set3))
 
 #############################################################
 
-"""
+
 
 #does sum(List A) = sum(set B)
 
@@ -279,3 +279,86 @@ A = [1, 2, 2, 1]
 B = set([1, 2, 2, 1])
 print("sum of list A is ", sum(A))
 print("sum of list B is ", sum(B))
+
+
+
+
+#############################################################
+
+
+# If statement example
+
+age = 18
+if age > 18:
+    print("this person is allowed")
+else:
+    print("this person is minor")
+
+
+
+
+#############################################################
+
+
+# Elif statment example
+
+age=18
+if age > 18:
+    print("This person is allowed")
+elif age < 18:
+    print("this person is minor")
+else:
+    print("this person will not be minor from next year")
+    
+
+
+
+#############################################################
+
+
+# Condition statement example
+
+age = 60
+if age > 60 or age == 60:
+    print("this person is senior citizen")
+else:
+    print("this person is not a senior citizen")
+        
+
+
+
+#############################################################
+
+
+# Condition statement example with NOT
+
+age = 18
+if not age== 21:
+    print("this peron is not 21")
+            
+
+
+
+#############################################################
+
+
+# Write an if statement to determine if an album had a rating greater than 8. Test it using the rating for the album “Back in Black” that had a rating of 8.5. 
+# If the statement is true print "This album is Amazing!". If the rating is less than or equal to 8 print “this album is ok”.
+
+album_Back_in_Black = 8.5
+if album_Back_in_Black > 8:
+    print("This album is Amazing!")
+else:
+    print("this album is ok")
+                
+
+
+
+#############################################################
+
+
+#Write an if statement to determine if an album came out before 1980 or in the years: 1991 or 1993. If the condition is true print out the year the album came out.
+
+album_year=1979
+if album_year < 1980 or album_year == 1991 or album_year == 1993:
+    print("Album came out in", album_year )
