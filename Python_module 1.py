@@ -387,7 +387,7 @@ while Rating > 6:
 
 #############################################################
 
-"""
+
 #Write a while loop to copy the strings 'orange' of the list squares to the list new_squares. Stop and exit the loop if the value on the list is not 'orange'
 
 squares = ['orange', 'orange', 'purple', 'blue ', 'orange']
@@ -398,4 +398,111 @@ while squares[i] == 'orange':
     new_squares.append(squares[i])
     i+=1
 print(new_squares)
+                
 
+
+
+#############################################################
+
+
+
+# First function example: Add 1 to a and store as b
+
+def add1(a):
+    a=a+1
+    b=a
+    print(b)
+
+add1(1)
+                
+
+
+
+#############################################################
+
+
+# Define a function for multiple two numbers
+
+def mult(a,b):
+    c=a*b
+    print(c)
+
+mult(5,7)
+mult(2, 'Disha')
+                
+
+
+
+#############################################################
+
+
+#calculating a equation
+
+def equat(a,b):
+    c = a + b + 2 * a * b - 1
+    if( c <0 ):
+        c=0
+    else:
+        c=5
+    print(c)
+
+equat(3,7)
+                
+
+
+
+#############################################################
+
+
+#print list using function
+
+def prlist(plist):
+    for i in plist:
+        print(i)
+
+prlist(['1', 1, 'the man', "abc"])
+                
+
+
+
+#############################################################
+
+
+#Come up with a function that divides the first input by the second input
+
+def div(a,b):
+    c=a/b
+    print(c)
+
+div(1400,7)
+                
+
+
+
+#############################################################
+
+
+# Use the con function for the following question
+
+def con(a, b):
+    print(a + b)
+
+con(3,5)
+                
+
+
+
+#############################################################
+
+"""
+# create a list using function
+
+lis=[]
+def con(a, b):
+    for i in range(6):
+        lis.append(a + b)
+        a+=1
+        b+=2
+    print(lis)
+
+con(7, 4)
