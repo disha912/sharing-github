@@ -516,6 +516,7 @@ con(7, 4)
 
 #Draw a rectangle using objects, functions and method
 
+
 class Rect(object):
 
     def __init__(self, l, h, color):
@@ -539,4 +540,48 @@ GreenRectangle.drawRectangle()
 #############################################################
 
 
+
+#Reading Text Files
+
+file1 = 'C:\\Disha\\Python\\file.txt'
+file2 = open(file1,'r')
+fileread= file2.read()
+print(file2.name)
+print(file2.mode)
+print(fileread)
+file2.close()
+
+                
+
+
+
+#############################################################
+
+
+#read a file using with
+
+file1 = 'C:\\Disha\\Python\\file.txt'
+with open(file1,'r') as file2:
+    fileread = file2.read()
+    print(fileread)
+    
+                
+
+
+
+#############################################################
+
 """
+#read a file line by line
+
+file1 = 'C:\\Disha\\Python\\file.txt'
+count=0
+with (open(file1,'r')) as file2:
+    for i in file2:
+        filestr=str(i)
+        print(filestr[8:16])
+
+
+
+
+    
