@@ -1,4 +1,4 @@
-"""
+
 #Use a stride value of 2 to print out every second character of the string E:
 
 E = 'clocrkr1e1c1t'
