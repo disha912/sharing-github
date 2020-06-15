@@ -1,3 +1,9 @@
 {
-    "git.autofetch": true
+    "git.autofetch": true,
+    "github.allowUnsafeSSL": true,
+    "github.autoPublish": true,
+    "github.customPullRequestDescription": "gitEditor",
+    "github.customPullRequestTitle": true,
+    "github.gitCommand": "https://github.com/disha912/sharing-github",
+    "github.remoteName": "https://github.com/disha912/sharing-github"
 }
