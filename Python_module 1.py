@@ -353,7 +353,7 @@ else:
     print("this album is ok")
                 
 
-"""
+
 
 #############################################################
 
@@ -363,4 +363,39 @@ else:
 album_year=1979
 if album_year < 1980 or album_year == 1991 or album_year == 1993:
     print("Album came out in", album_year )
+                
+
+
+
+#############################################################
+
+
+#Write a while loop to display the values of the Rating of an album playlist stored in the list PlayListRatings. If the score is less than 6, exit the loop. 
+# The list PlayListRatings is given by: PlayListRatings = [10, 9.5, 10, 8, 7.5, 5, 10, 10]
+
+PlayListRatings = [10, 9.5, 10, 8, 7.5, 5, 10, 10]
+i=0
+Rating = PlayListRatings[0]
+
+while Rating > 6:
+    print(Rating)
+    Rating=PlayListRatings[i]
+    i+=1
+                
+
+
+
+#############################################################
+
+"""
+#Write a while loop to copy the strings 'orange' of the list squares to the list new_squares. Stop and exit the loop if the value on the list is not 'orange'
+
+squares = ['orange', 'orange', 'purple', 'blue ', 'orange']
+new_squares = []
+i=0
+
+while squares[i] == 'orange':
+    new_squares.append(squares[i])
+    i+=1
+print(new_squares)
 
