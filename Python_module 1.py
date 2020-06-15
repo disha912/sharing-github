@@ -494,7 +494,7 @@ con(3,5)
 
 #############################################################
 
-"""
+
 # create a list using function
 
 lis=[]
@@ -506,3 +506,37 @@ def con(a, b):
     print(lis)
 
 con(7, 4)
+                
+
+
+
+#############################################################
+
+
+
+#Draw a rectangle using objects, functions and method
+
+class Rect(object):
+
+    def __init__(self, l, h, color):
+        self.l = l
+        self.h = h
+        self.color = color
+
+    def drawRectangle(self):
+        import matplotlib.pyplot as plt
+        plt.gca().add_patch(plt.Rectangle(0,0), width=self.l, height = self.h, fc =  self.color )
+        plt.axis("scaled")
+        plt.show()
+
+GreenRectangle = Rect(5,6,'Green')
+GreenRectangle.drawRectangle()
+
+                
+
+
+
+#############################################################
+
+
+"""
