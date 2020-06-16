@@ -618,8 +618,9 @@ with open(file, 'r')  as file_write:
 
 #############################################################
 
-"""
+
 # Copy file to another
+
 with open('C:\\Disha\\Python\\copy_from.txt','r') as file_read:
     with open('C:\\Disha\\Python\\copy_to.txt','w') as file_write:
         for i in file_read:
@@ -628,13 +629,348 @@ with open('C:\\Disha\\Python\\copy_from.txt','r') as file_read:
 
 with open('C:\\Disha\\Python\\copy_to.txt','r') as file_write:
     file_write.read()
+    
+    
+                
 
 
 
+#############################################################
+
+
+# Pandas
+
+import pandas as pd
+csv_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.csv'
+df = pd.read_csv(csv_path)
+df.head()
+    
+    
+                
 
 
 
+#############################################################
+
+
+# Read data from CSV file
+
+import pandas as pd
+csv_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.csv'
+df = pd.read_csv(csv_path)
+    
+    
+                
 
 
 
+#############################################################
+
+
+
+#We can use the method head() to examine the first five rows of a dataframe    
+    
+import pandas as pd
+csv_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.csv'
+df = pd.read_csv(csv_path)
+df.head()               
+
+
+
+#############################################################
+
+#We use the path of the excel file and the function read_excel. The result is a data frame as before:
+
+import pandas as pd
+exc_path =  'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df  = pd.read_excel(exc_path)    
+
+
+    
+                
+
+
+
+#############################################################
+
+# Access column Length
+
+import pandas as pd
+exc_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc_path)
+x= df[['Length']]   
+    
+                
+
+
+
+#############################################################
+
+#You can also get a column as a series    
+    
+import pandas as pd
+exc_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc_path)
+df.loc[0,'Genre']                
+
+
+
+#############################################################
+
+
+
+# Get the column as a dataframe
+
+
+import pandas as pd
+exc_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc_path)
+df.iloc[0,1]    
+    
+                
+
+
+
+#############################################################
+
+# Access to multiple columns
+
+import pandas as pd
+exc_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc_path)
+df[['Artist','Length','Genre']]    
+    
+                
+
+
+
+#############################################################
+
+# Access the value on the first row and the first column
+
+
+import pandas as pd
+exc_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc_path)
+df.iloc[0,0]    
+    
+                
+
+
+
+#############################################################
+
+# Access the value on the second row and the first column
+
+
+import pandas as pd
+exc_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc_path)
+df.iloc[1,0]    
+    
+                
+
+
+
+#############################################################
+
+# Access the value on the first row and the third column
+
+
+import pandas as pd
+exc= 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc)
+df.iloc[0,2]    
+    
+                
+
+
+
+#############################################################
+
+    
+# Access the column using the name
+
+import pandas as pd
+exc_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc_path)
+df.loc[0,'Artist']    
+                
+
+
+
+#############################################################
+
+    
+# Access the column using the name
+
+import pandas as pd
+exc_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc_path)
+df.loc[1,'Artist']    
+                
+
+
+
+#############################################################
+
+# Access the column using the name
+
+import pandas as pd
+exc_path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exc_path)
+df.loc[0,'Released']    
+    
+                
+
+
+
+#############################################################
+
+
+# Slicing the dataframe using name
+
+import pandas as pd
+exe='https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exe)
+df.loc[0:3,'Artist':'Released']    
+    
+                
+
+
+
+#############################################################
+
+# Slicing the dataframe
+
+import pandas as pd
+exe= 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exe)
+df.iloc[0:3,0:4]    
+    
+                
+
+
+
+#############################################################
+
+# Write your code below and press Shift+Enter to execute
+
+import pandas as pd
+exe= 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df = pd.read_excel(exe)
+q = df[['Rating']]    
+    
+                
+
+
+
+#############################################################
+
+# Write your code below and press Shift+Enter to execute
+
+import pandas as pd
+exe = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df  = pd.read_excel(exe)
+q=df[['Released','Artist']]    
+    
+                
+
+
+
+#############################################################
+
+# Write your code below and press Shift+Enter to execute
+
+import pandas as pd
+exe = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%204/Datasets/TopSellingAlbums.xlsx'
+df  = pd.read_excel(exe)
+df.iloc[1,2]
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
+
+    
+    
+                
+
+
+
+#############################################################
 
